@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+     overflow-x: hidden;
+  background-color:  #2a2c1f;
+}
+
+.div1,  .div3, .div4, .div5 {
+    height: 100vh;
+    display: flex;            /* Flexbox for centering */
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+
+  font-weight: 100;
+  font-size: 3rem;          /* Bigger text */
+  
+}
+
+.div1{
+    background-color: #eefbd2;
+    color: #891d1df7;
+     font-family: 'Melodrama';
+}
+
+.div2{
+    background-color: #eefbd2;
+    color: #6E8E59;
+}
+
+.div3{
+   background-color: #2a2c1ff7;
+    color: #eefbd2;
+     font-family: 'Melodrama';
+}
+
+.div4{
+   background-color: #eefbd2;
+    color:   #580d0d;
+    font-family: 'Melodrama';
+}
+
+.div5{
+   background-color:  #320707;
+    color:#eefbd2;
+     font-family: 'Melodrama';
+     border: 0;
+}
+
+
+
+
+@font-face {
+  font-family: 'Melodrama';
+  src: url('fonts/Melodrama-Regular.woff2') format('woff2');
+}
+
+
+
+
+.div2 {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.div2 .fixed-text {
+  position: fixed;
+  top: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+
+
+
+  color:  #eefbd2;
+  font-size: 3rem;
+  display: flex;            /* Flexbox for centering */
+  justify-content: center;  /* Center horizontally */
+  align-items: center; 
+   font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  
+  pointer-events: none;
+}
+
+.div2 .horizontal-wrapper {
+  
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.div2 .panel {
+  flex: 0 0 100vw;
+  height: 100%;
+}
+
+.div2 .panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.div2 .horizontal-wrapper img {
+  width: 100vw;  /* full viewport width */
+  height: 100vh; /* full viewport height */
+  object-fit: cover;
+  flex-shrink: 0;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.square2 div {
+  opacity: 0.2; /* low contrast start */
+}
+
+
+
+
+
+.overlay-fade {
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.div1, .div2,  .div3, .div4, .div5 {
+  position: relative;
+  z-index: 4;
+}
+
+
+
+
+.div2 {
+  overflow: hidden;
+  position: relative;
+}
+
+
+.square3, .square4, .square5 {
+  opacity: 0;
+ 
+  transition: none;
+}
+
+
+
+
+.div5 {
+  position: relative;
+  height: 100vh;
+  overflow: visible;
+  
+}
+
+.square5 {
+  z-index: 1;
+  position: relative;
+  
+  padding-top: 100px;
+}
+
+.bi-heart-fill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 100;
+  color: #0b3026;
+}
+
+    
+
